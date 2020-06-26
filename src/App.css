@@ -76,6 +76,11 @@
   font-size: 1rem;
 }
 
+.btn[disabled] {
+  pointer-events: none;
+  opacity: .3;
+}
+
 .btn:hover {
   background-color: var(--brand-color_6);
 }
@@ -103,4 +108,30 @@
   margin: 1rem auto;
   width: 250px;
   height: 250px;
+}
+
+.form {
+  width: 100%;
+  max-width: 320px;
+}
+
+.form label {
+  display: block;
+  font-size: 14px;
+}
+
+.form input {
+  background: #fff;
+  border: none;
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: 4px;
+  margin-bottom: 24px;
+  padding: 4px 8px;
+  width: 100%;
+}
+
+.form .btn {
+  width: 100%;
 }

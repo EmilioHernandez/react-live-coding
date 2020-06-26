@@ -9,6 +9,10 @@
   font-weight: 600;
 }
 
+.gf-header a + a {
+  margin: 0px 8px;
+}
+
 .gf-header a:hover {
   text-decoration: underline;
 }

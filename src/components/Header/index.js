@@ -15,15 +15,22 @@ export default function Header () {
 
   return (
     <header className='gf-header'>
+      <nav className='gf-header-nav'>
       {
         isLogged
           ? <Link to='#' onClick={handleClick}>
           Logout
           </Link>
-          : <Link to='/login'>
-            Login
-          </Link>
+          : <>
+            <Link to='/login'>
+              Login
+            </Link>
+            <Link to='/register'>
+              Register
+            </Link>
+          </>
       }
+      </nav>
     </header>
   )
 }
